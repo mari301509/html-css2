@@ -1,0 +1,106 @@
+@import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
+@import url("normalize.css");
+
+/*모바일*/
+@media screen and (max-width: 999px){
+    /*모바일 컨테이너*/
+    .container{
+        background: yellow;
+    }
+    .appHeader, .appNavigation, .appMain, .appFooter{
+        width: 100%;
+    }
+    .appMain > section,
+    .appMain > article{
+        width: 100%;
+    }
+    .appNavigation{
+        display: none;
+    }
+    /*임시크기*/
+    .appHeader{
+        height: 15vh;
+    }
+    .appMain{
+        height: 70vh;
+    }
+    .appFooter{
+        height: 15vh;
+    }
+}
+/*데스크탑*/
+@media screen and (min-width: 1000px){
+    /*데스크탑 컨테이너*/
+    .container{
+        background: pink;
+    }
+    .appNavigation,
+    .appFooter{
+        width: 100%;
+    }
+    .appHeader, .appMain{
+        width: 1000px;
+    }
+    /*임시크기*/
+    .appHeader{
+        height: 10vh;
+    }
+    .appNavigation{
+        height: 20vh;
+    }
+    .appMain{
+        height: 60vh;
+    }
+    .appFooter{
+        height: 10vh;
+    }
+    /*메인컨텐츠*/
+    .book{
+        width: 320px;
+    }
+    .news{
+        width: 660px;
+    }
+    .board{
+        width: 320px;
+    }
+    .twitter{
+        width: 400px;
+    }
+    .favorite{
+        width: 240px;
+    }
+}
+
+/*전체*/
+.container{
+    display: flex;
+    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.appMain{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*배경*/
+.container{
+    background: lightsteelblue;
+}
+.appHeader{
+    background: purple;
+}
+.appNavigation{
+    background: darkslateblue;
+}
+.appMain{
+    background: mediumpurple;
+}
+.appMain > section,
+.appMain > article{
+    background: royalblue;
+}
+.appFooter{
+    background: rebeccapurple;
+}
