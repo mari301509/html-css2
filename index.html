@@ -9,7 +9,26 @@
 </head>
 <body>
 <div class="container">
-    <header class="appHeader">헤더</header>
+    <header class="appHeader">
+        <h1 class="brand resetMargin">
+            <a href="">
+                <img src="images/rwd-logo.png" alt="logo">
+            </a>
+        </h1>
+        <ul class="memberOnly">
+            <li><a href="#">로그인</a></li>
+            <li><span class="divider">ㅣ</span><a href="#">회원가입</a></li>
+            <li><span class="divider">ㅣ</span><a href="#">커뮤니티</a></li>
+        </ul>
+        <form action="http://formspree.io/xyyzgpvy" class="searchform">
+            <fieldset>
+                <legend></legend>
+                <label for="search">검색</label>
+                <input type="search" id="search" placeholder="검색어를 입력하세요" name="search">
+                <button type="submit">검색</button>
+            </fieldset>
+        </form>
+    </header>
     <nav class="appNavigation">메인메뉴</nav>
     <main class="appMain">
         <section class="book">추천서적</section>
