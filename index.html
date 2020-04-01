@@ -10,26 +10,70 @@
 <body>
 <div class="container">
     <header class="appHeader">
-        <h1 class="brand resetMargin">
+        <h1 class="resetMargin brand">
             <a href="">
                 <img src="images/rwd-logo.png" alt="logo">
             </a>
         </h1>
-        <ul class="memberOnly">
+        <ul class="resetList memberOnly">
             <li><a href="#">로그인</a></li>
-            <li><span class="divider">ㅣ</span><a href="#">회원가입</a></li>
-            <li><span class="divider">ㅣ</span><a href="#">커뮤니티</a></li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span><a href="#">회원가입</a></li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span><a href="#">커뮤니티</a></li>
         </ul>
-        <form action="http://formspree.io/xyyzgpvy" class="searchform">
-            <fieldset>
-                <legend></legend>
-                <label for="search">검색</label>
-                <input type="search" id="search" placeholder="검색어를 입력하세요" name="search">
-                <button type="submit">검색</button>
+        <form action="http://formspree.io/xyyzgpvy" class="searchForm">
+            <fieldset class="resetBox">
+                <legend>검색 폼</legend>
+                    <div class="flexWrap">
+                    <label for="search" class="a11y-hidden">검색</label>
+                    <input type="search" id="search" placeholder="검색어를 입력하세요" name="search" required>
+                    <button class="buttonNone" type="submit">검색</button>
+                </div>
             </fieldset>
         </form>
     </header>
-    <nav class="appNavigation">메인메뉴</nav>
+
+    <nav class="appNavigation menu" aria-labelledby="menu">
+        <h2 class="a11y-hidden" id="menu">메인 메뉴</h2>
+        <button class="buttonNone buttonBurger" type="button" aria-label="메뉴 열기" title="메뉴 열기">
+            <span class="burgerBar round positionTop"></span>
+            <span class="burgerBar round positionMiddle"></span>
+            <span class="burgerBar round positionBottom"></span>
+        </button>
+        <div class="menuWrap">
+            <ul class="mainMenu">
+                <li><span class="star icon-plus" aria-hidden="true"></span>HTML에 대해
+                <ul class="subMenu">
+                    <li><a href="#">HTML5 소개</a></li>
+                    <li><a href="#">레퍼런스 소개</a></li>
+                    <li><a href="#">활용 예제</a></li>
+                </ul></li>
+                <li><span class="icon-star icon-minus" aria-hidden="true"></span>CSS에 대해
+                <ul class="subMenu">
+                    <li><a href="#">CSS 소개</a></li>
+                    <li><a href="#">CSS2 VS CSS3</a></li>
+                    <li><a href="#">CSS 애니메이션</a></li>
+                </ul></li>
+                <li><span class="icon-star icon-minus" aria-hidden="true"></span>웹표준/웹접근성
+                <ul class="subMenu">
+                    <li><a href="#">웹표준 이란?</a></li>
+                    <li><a href="#">웹접근성의 개요</a></li>
+                    <li><a href="#">HTML5의 현재와 미래</a></li>
+                </ul></li>
+                <li><span class="icon-star icon-minus" aria-hidden="true"></span>묻고 답하기
+                <ul class="subMenu">
+                    <li><a href="#">묻고 답하기</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">1대1 질문</a></li>
+                </ul></li>
+                <li><span class="icon-star icon-minus" aria-hidden="true"></span>자료실
+                <ul class="subMenu">
+                    <li><a href="#">공개 자료실</a></li>
+                    <li><a href="#">이미지 자료실</a></li>
+                    <li><a href="#">예제 자료실</a></li>
+                </ul></li>
+            </ul>
+        </div>
+    </nav>
     <main class="appMain">
         <section class="book">추천서적</section>
         <section class="news">새소식</section>
