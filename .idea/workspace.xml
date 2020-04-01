@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c098e3eb-fbf5-4bae-a5f1-cb3423b82cf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/images/ani_flower_01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/ani_flower_02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/ani_flower_03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/ani_flower_04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/back_forward.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/backpage_forwardpage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/bg_flower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/btn_search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/coffee.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/logo_l.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/logo_m.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/rank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/sprite_bullet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/sprite_footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/sprite_header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/sprite_main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/sprite_mobile_header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/validation_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/volume_off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/volume_on.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/images/webcafe_video_logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex/css/entry.css" beforeDir="false" afterPath="$PROJECT_DIR$/Ex/css/entry.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +63,7 @@
       <workItem from="1585296138460" duration="193000" />
       <workItem from="1585556304656" duration="716000" />
       <workItem from="1585618733302" duration="188000" />
-      <workItem from="1585704960039" duration="15298000" />
+      <workItem from="1585704960039" duration="15567000" />
     </task>
     <servers />
   </component>
