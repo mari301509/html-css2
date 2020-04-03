@@ -1,6 +1,71 @@
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@font-face {font-family:'fontello';src:url('./font/fontello.eot?98005817');src:url('./font/fontello.eot?98005817#iefix') format('embedded-opentype'),url('./font/fontello.woff2?98005817') format('woff2'),url('./font/fontello.woff?98005817') format('woff'),url('./font/fontello.ttf?98005817') format('truetype'),url('./font/fontello.svg?98005817#fontello') format('svg');}
+/* Fontello 웹폰트 */
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?98005817');
+    src: url('./font/fontello.eot?98005817#iefix') format('embedded-opentype'),
+    url('./font/fontello.woff2?98005817') format('woff2'),
+    url('./font/fontello.woff?98005817') format('woff'),
+    url('./font/fontello.ttf?98005817') format('truetype'),
+    url('./font/fontello.svg?98005817#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-export:before {
+    content: '\e800';
+}
+.icon-search:before {
+    content: '\e80b';
+}
+.icon-star:before {
+    content: '\e814';
+}
+.icon-plus:before {
+    content: '\e815';
+}
+.icon-minus:before {
+    content: '\e816';
+}
+.icon-calendar:before {
+    content: '\e817';
+}
+.icon-link-ext:before {
+    content: '\f08e';
+}
+.icon-quote-left:before {
+    content: '\f10d';
+}
+.icon-quote-right:before {
+    content: '\f10e';
+}
+.icon-circle:before {
+    content: '\f111';
+}
+.icon-dot-circled:before {
+    content: '\f192';
+}
+.icon-git-squared:before {
+    content: '\f1d2';
+}
 
 /*전체*/
 html{
@@ -23,6 +88,10 @@ a{
 .appMain{
     display: flex;
     flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.appFooter{
+    height: 140px;
 }
 
 /*헤더*/
@@ -46,6 +115,221 @@ a{
 .subMenu{
     font-weight: 400;
 }
+/*공통*/
+.sprite{
+    background: url("images/sprite_main.png") no-repeat;
+}
+.h2{
+    padding-left: 65px;
+    font-size: 1.3em;
+    height: 59px;
+    padding-top: 0.3em;
+}
+.h2 span{
+     display: block;
+ }
+section p{
+    padding: 0 10px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+/*메인 섹션 - 북*/
+.bookHeading span,
+.score{
+    color: yellowgreen;
+}
+.score{
+    font-size: 2.5rem;
+}
+.book figure{
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+}
+.book figure img{
+    max-width: 100%;
+}
+.book figcaption{
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+.book dd{
+    margin: 0;
+}
+.book dt, .book dd{
+    font-size: 1.4rem;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+/*새소식*/
+.newsHeading{
+    background-position: 0 -230px;
+}
+.newsHeading span{
+    color: GoldenRod;
+}
+.news time{
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+.iframeContainer{
+    padding-top: 56.25%;
+    position: relative;
+}
+.iframeVideo{
+    border: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/*게시판*/
+.board ul{
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.board li{
+    display: flex;
+    margin-bottom: 10px;
+}
+.board a{
+    flex-grow: 1;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board time{
+    display: block;
+    white-space: nowrap;
+}
+.boardHeading{
+    background-position: 0 -115px;
+}
+.boardHeading span{
+    color: saddlebrown;
+}
+
+/*인기사이트*/
+.favoriteHeading{
+     background-position: 0 -345px;
+ }
+.favoriteHeading span{
+    color: orange;
+}
+.favorite ol{
+    list-style-type: none;
+    font-weight: 300;
+}
+.favorite ol li{
+    counter-increment: number;
+    position: relative;
+}
+.favorite ol li::before{
+    content: counter(number);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: orange;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+.favorite ol li a{
+    line-height: 40px;
+}
+.favorite ol li a:hover::after,
+.favorite ol li a:focus::after{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    white-space: nowrap;
+    padding: 2px 10px;
+    background: orange;
+    border-radius: 5px;
+    box-shadow: 5px 5px black;
+    z-index: 1;
+}
+
+/*트위터*/
+.twitterHeading{
+      background-position: 0 -460px;
+  }
+.twitterHeading span{
+    color: dodgerblue;
+}
+.twitter{
+    position: relative;
+}
+.twitter dd{
+    display: inline-block;
+    margin: 0;
+}
+.twitter dl{
+    margin-bottom: 40px;
+}
+.twitter dd a,
+.twitter span{
+    color: steelblue;
+ }
+.twitter p,
+.twitter time{
+    font-weight: 300;
+    padding-right: 30%
+ }
+.twitter time{
+    display: block;
+    text-align: right;
+}
+.twitter p{
+    margin-bottom: 30px;
+}
+.twitter figure{
+    position: absolute;
+    right: 0;
+    top: 35%;
+    width: 30%;
+    max-width: 130px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+ }
+.twitter figure img{
+    padding: 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    max-width: 100%;
+ }
+
+/*푸터*/
+.appFooter{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+small{
+    font-size: inherit;
+}
+address{
+    font-style: normal;
+}
 
 /*모바일*/
 @media screen and (max-width: 999px){
@@ -62,6 +346,9 @@ a{
     .appHeader, .appNavigation, .appMain, .appFooter{
         width: 100%;
     }
+    .appMain{
+        padding: 0 20px;
+    }
     .appMain > section,
     .appMain > article{
         width: 100%;
@@ -75,6 +362,9 @@ a{
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .icon-star{
+        display: none;
     }
     /*모바일 링크*/
     .memberOnly{
@@ -92,7 +382,7 @@ a{
     }
     .searchForm input{
         flex-grow: 1;
-        padding: 2px 5px;
+        padding: 2px 10px;
         border: 1px solid #aaa;
         border-radius: 3px;
     }
@@ -123,16 +413,35 @@ a{
         right: 20px;
     }
     .menuWrap{
+        display: none;
         width: 70%;
         height: 100vh;
         position: fixed;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(10px);
+        padding: 30px;
     }
     .mainMenu{
         color: white;
+        margin: 0;
     }
+    .mainMenu > li > a {
+        margin: 10px 0;
+    }
+    .mainMenu a{
+        padding: 0.5em;
+        display: inline-block;
+    }
+    .subMenu{
+        display: none;
+    }
+    .menuAct .subMenu{
+        display: block;
+    }
+
+    /*메뉴 오픈 아이콘*/
     .buttonBurger{
         overflow: hidden;
     }
@@ -141,18 +450,17 @@ a{
         width: 100%;
         height: 20%;
         background: #fff;
+        transition: all 1s;
+        left: 0;
     }
     .positionTop{
-        left: 0;
         top: 0;
     }
     .positionMiddle{
-        left: 0;
         top: 50%;
         transform: translateY(-50%);
     }
     .positionBottom{
-        left: 0;
         top: 100%;
         transform: translateY(-100%);
     }
@@ -161,59 +469,51 @@ a{
     }
     .buttonBurger:hover .positionTop{
         top: 50%;
-        transform: translateY(-50%);
-        transform: rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
     }
     .buttonBurger:hover .positionMiddle{
-        transform: translate(-105%, 50%);
+        transform: translate(-105%, -50%);
     }
     .buttonBurger:hover .positionBottom{
         top: 50%;
-        transform: translateY(-50%);
-        transform: rotate(-45deg);
+        transform: translateY(-50%) rotate(-45deg);
     }
-    /*임시크기*/
-    .appMain{
-        height: 70vh;
+    /*푸터*/
+    .appFooter address span{
+        display: block;
     }
-    .appFooter{
-        height: 15vh;
-    }
-
 }
 /*데스크탑*/
 @media screen and (min-width: 1000px){
     /*데스크탑 디바이스*/
-
+    .icon-minus, .icon-plus{
+        display: none;
+    }
     .appNavigation,
     .appFooter{
         width: 100%;
     }
     .appHeader, .appMain{
-        width: 1000px;
-    }
-    /*임시크기*/
-    .appMain{
-        height: 60vh;
-    }
-    .appFooter{
-        height: 10vh;
+        min-width: 1000px;
+        max-width: 2000px;
+        width: 80%
     }
     /*메인컨텐츠*/
     .book{
-        width: 320px;
+        width: 32%;
     }
     .news{
-        width: 660px;
+        width: 66%;
     }
     .board{
-        width: 320px;
+        width: 32%;
     }
     .twitter{
-        width: 400px;
+        width: 40%;
     }
     .favorite{
-        width: 240px;
+        width: 24%;
+        order: 1;
     }
     /*데스크탑 헤더*/
     .appHeader{
@@ -224,6 +524,7 @@ a{
         position: absolute;
         top: 0;
         right: 0;
+        font-weight: 100;
     }
     .appHeader .brand, .brand a, .brand img{
         display: inline-block;
@@ -240,19 +541,19 @@ a{
         margin-right: 10px;
         border-radius: 3px;
         border: 1px solid black;
-        padding-left: 5px;
+        padding-left: 10px;
     }
     .searchForm button{
         border: 1px solid black;
         border-radius: 3px;
         background-color: #988857;
         color: white;
-        padding: 10px 15px;
+        padding: 0 15px;
         height: 35px;
     }
     /*데스크탑 메인메뉴*/
     .appNavigation{
-        background: brown;
+        background: #988574;
         color: white;
     }
     .buttonBurger{
@@ -260,28 +561,36 @@ a{
     }
     .menuWrap{
         margin: auto;
-        width: 800px;
+        width: 70%;
+        min-width: 900px;
     }
     .mainMenu{
         line-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+    }
+    .mainMenu > li > a{
         font-size: 1.7rem;
         font-weight: 700;
-        display: flex;
-        list-style: none;
         text-shadow:
-                1px 0px #000,
-                0px 1px #000,
+                1px 0 #000,
+                0 1px #000,
                 -1px 0 #000,
-                0px -1px #000;
-    }
-    .star{
-        margin: 3px;
+                0 -1px #000;
     }
     .subMenu{
-        text-shadow: none;
-        font-weight: 400;
         padding-left: 25px;
     }
+    /*데스크탑 메인 섹션*/
+    /*추천도서*/
+    /*푸터푸터*/
+    .appFooter{
+        text-align: center;
+        padding-top: 75px;
+        line-height: 40px;
+    }
+
 }
 
 /*스타일 초기화*/
@@ -313,16 +622,3 @@ a{
 
 /*배경*/
 
-.appNavigation{
-    background: darkslateblue;
-}
-.appMain{
-    background: mediumpurple;
-}
-.appMain > section,
-.appMain > article{
-    background: royalblue;
-}
-.appFooter{
-    background: rebeccapurple;
-}

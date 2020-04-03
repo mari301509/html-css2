@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c098e3eb-fbf5-4bae-a5f1-cb3423b82cf1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +65,14 @@
       <workItem from="1585296138460" duration="193000" />
       <workItem from="1585556304656" duration="716000" />
       <workItem from="1585618733302" duration="188000" />
-      <workItem from="1585704960039" duration="15567000" />
+      <workItem from="1585704960039" duration="16818000" />
+      <workItem from="1585738803520" duration="126000" />
+      <workItem from="1585742268295" duration="2000" />
+      <workItem from="1585793486909" duration="3419000" />
+      <workItem from="1585808118590" duration="1996000" />
+      <workItem from="1585811703712" duration="1775000" />
+      <workItem from="1585825011175" duration="3000" />
+      <workItem from="1585875975822" duration="12620000" />
     </task>
     <servers />
   </component>
@@ -71,6 +80,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="506" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585879456858">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="506" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1585879456858" />
     <state x="435" y="199" key="SettingsEditor" timestamp="1585726731622">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
